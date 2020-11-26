@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/find-the-duplicate-number/
+// Usng cyclic linked list and tortoise method (slow and fast pointers) cause if there's a duplicate number, there will be a cyclicity involved when we use a linked list.
 
 class Solution {
 public:
