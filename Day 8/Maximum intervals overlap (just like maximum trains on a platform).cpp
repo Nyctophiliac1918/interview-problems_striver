@@ -26,10 +26,10 @@ int main() {
 	    int maxt=max(maxs,maxe);
 	    int x[maxt+5];
 	    memset(x,0,sizeof(x));
-	    for(int i=0;i<n;i++)
+	    for(int i=0;i<n;i++)	// Lazy Addition
 	    {
-	        x[s[i]]++;
-	        x[e[i]+1]--;
+	        x[s[i]]++;	// you increement the count at the time when someone enters.
+	        x[e[i]+1]--;	// you decreement the time next to it when someone leaves as arrival is given the priority.
 	    }
 	    int p=0,c=0,maxy=0;
 	    for(int i=0;i<maxt+2;i++)
